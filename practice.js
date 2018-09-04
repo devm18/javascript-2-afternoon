@@ -15,25 +15,36 @@
 */
 
 //Code here
-
+const me = {
+  name: 'John',
+  age: 45,
+}
+// window.alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
-
 /*
   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. 
   Have the values to those keys be your favorite thing in that category.
 */
 
 //Code here
-
-
+const favoriteThings = { 
+  band: "Stones",
+  food: 'steak',
+  person: 'Jesus',
+  book: 'Call To Arms',
+  movie: 'Yi Yi',
+  holiday: 'beach'
+}
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
+favoriteThings.car = "bmw";
+favoriteThings.brand = "convertible";
 
 
 
@@ -42,6 +53,8 @@
 */
 
 //Code here
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -56,15 +69,17 @@
 */
 
 //Code here
-
-
+const backPack = {}; 
+const item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'blue';
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+// alert(backPack) // in chrome console
 
 
 /*
@@ -74,8 +89,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
-
+console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -97,9 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
-
-
+user2.name = 'Tyler S. McGinnis'; 
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,7 +133,7 @@ var user2 = {
 */
 
 //Code Here
-
+// let methodCollection = { }; 
 
 
 /*
@@ -129,6 +142,10 @@ var user2 = {
 */
 
 //Code Here
+// let methodCollection = {
+//   alertHello: alert('hello'),
+//   logHello: console.log('hello')
+//  }; 
 
 
 
