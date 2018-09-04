@@ -133,7 +133,7 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 */
 
 //Code Here
-// let methodCollection = { }; 
+let methodCollection = { }; 
 
 
 /*
@@ -142,11 +142,8 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 */
 
 //Code Here
-// let methodCollection = {
-//   alertHello: alert('hello'),
-//   logHello: console.log('hello')
-//  }; 
-
+methodCollection.alertHello = () => alert('hello'); 
+methodCollection.logHello = () => console.log('hello'); 
 
 
 /*
@@ -154,8 +151,8 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 */
 
 //Code Here
-
-
+// methodCollection.alertHello();
+// methodCollection.logHello();
 
 ////////// PROBLEM 6 //////////
 
@@ -165,7 +162,11 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 */
 
 //Code Here
-
+const makePerson = (name, birthday, ssn) => { 
+  // return Object({ name: name, birthday: birthday, ssn: ssn }); 
+  // return { name: name, birthday: birthday, ssn: ssn }; 
+  return { name, birthday, ssn }; // Destructured 
+}; 
 
 
 ////////// PROBLEM 7 //////////
@@ -176,5 +177,9 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 */
 
 //Code Here
+const makeCard = (cardNumber, expirationDate, securityCode) => {
+  return Object({ cardNumber, expirationDate, securityCode }); 
+  // return { cardNumber, expirationDate, securityCode }; 
+}
 
 
